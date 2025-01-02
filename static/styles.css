@@ -1,0 +1,68 @@
+html, body, #viewDiv {
+    height: 100vh;
+    width: 100vw;
+}
+
+.background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: cycle-background 20s infinite;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+    opacity: 0.25;
+}
+
+@keyframes cycle-background {
+    0% { background-image: url('map1.jpg'); }
+    20% { background-image: url('map2.jpg'); }
+    40% { background-image: url('map3.jpg'); }
+    60% { background-image: url('map4.png'); }
+    80% { background-image: url('map5.png'); }
+    100% { background-image: url('map1.jpg'); }
+}
+
+.cover-container {
+    position: relative;
+    z-index: 2;
+}
+
+#loadingScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(8, 8, 8, 0.971);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#progressBarContainer {
+    width: 90%;
+    height: 2px;
+    background-color: #e0e0e0;
+    border-radius: 1px;
+    overflow: hidden;
+}
+
+#progressBar {
+    width: 0;
+    height: 100%;
+    background-color: #3498db;
+    transition: width 12s linear;
+}
+
+.leaflet-control-geosearch {
+    top: 70px; 
+    left: 20px;
+    z-index: 9999;
+}
+

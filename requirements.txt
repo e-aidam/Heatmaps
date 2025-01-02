@@ -1,0 +1,4 @@
+flask
+flask-Session
+requests
+urllib3
