@@ -10,7 +10,7 @@
 
   
 
-Welcome to **Heatmaps**! This project is a web application that uses Flask (Python) on the backend, with HTML, CSS, and JavaScript on the frontend to visualize Strava activities on an interactive map. In its current version, users can only view Ethan Aidam's past Strava activities, complete with route details, activity statistics, and customizable map themes.
+Welcome to **Heatmaps**! This project is a web application that uses Flask (Python) on the backend, with HTML, CSS, and JavaScript on the frontend to visualize Strava activities on an interactive map. In its current version, users can view Ethan Aidam's past Strava activities, complete with route details, activity statistics, and customizable map themes.
 
   
 
